@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f5f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background-color: #1e3a8a;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .header p {
+            margin: 10px 0 0;
+            font-style: italic;
+        }
+        
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section h2 {
+            color: #1e3a8a;
+            border-bottom: 2px solid #e7eaf0;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        .skills-table th, .skills-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e7eaf0;
+        }
+        
+        .skills-table th {
+            background-color: #1e3a8a;
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        .skills-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .level-expert {
+            color: #1e3a8a;
+            font-weight: bold;
+        }
+        
+        .level-advance {
+            color: #2563eb;
+            font-weight: bold;
+        }
+        
+        .level-basic {
+            color: #6b7280;
+        }
+        
+        .level-native {
+            color: #047857;
+            font-weight: bold;
+        }
+        
+        .link {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .link:hover {
+            text-decoration: underline;
+        }
+        
+        .interactive-section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+        }
+        
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            flex-grow: 1;
+            font-family: inherit;
+        }
+        
+        button {
+            padding: 8px 16px;
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            background-color: #3b82f6;
+        }
+        
+        #quote-display {
+            font-style: italic;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #1e3a8a;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Joaquin Cuevas Muñoz</h1>
+            <p>Civil Engineering in Computer Science student</p>
+        </div>
+        
+        <div class="section">
+            <h2>About Me</h2>
+            <p>
+                <strong>Major:</strong> Computer Science<br>
+                <strong>Year of University Enrollment:</strong> 2022<br>
+                <strong>GitHub:</strong> <a href="https://github.com/Joaquincuevas" class="link" target="_blank">github.com/joaquincuevas</a>
+            </p>
+            <p>
+                I am a passionate computer science student with a strong interest in software development and data analysis. 
+                Currently focusing on web technologies and database systems, I enjoy creating applications that solve real-world problems. 
+                I'm actively seeking internship opportunities where I can apply my skills and continue to grow as a developer.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>Skills</h2>
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td class="level-advance">Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td class="level-basic">Basic</td>
+                    </tr>
+                    <tr>
+                        <td>HTML/CSS</td>
+                        <td class="level-basic">Basic</td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td class="level-basic">Basic</td>
+                    </tr>
+                    <tr>
+                        <td>Excel</td>
+                        <td class="level-advance">Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td class="level-advance">Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Figma</td>
+                        <td class="level-expert">Expert</td>
+                    </tr>
+                    <tr>
+                        <td>Revit</td>
+                        <td class="level-advance">Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Autocad</td>
+                        <td class="level-advance">Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Adobe Illustrator</td>
+                        <td class="level-expert">Expert</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td class="level-expert">Expert</td>
+                    </tr>
+                    <tr>
+                        <td>Spanish</td>
+                        <td class="level-native">Native</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Favorite Quote</h2>
+            <div class="interactive-section">
+                <p>Change the quote by typing a new one and clicking the button:</p>
+                <div class="controls">
+                    <input type="text" id="quote-input" placeholder="Enter your favorite quote...">
+                    <button id="update-quote">Update Quote</button>
+                </div>
+                <div id="quote-display">
+                    without the dark, we'd never see the stars
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('update-quote').addEventListener('click', function() {
+            const quoteInput = document.getElementById('quote-input').value;
+            if (quoteInput.trim() !== '') {
+                document.getElementById('quote-display').textContent = quoteInput;
+            }
+        });
+    </script>
+</body>
+</html>
