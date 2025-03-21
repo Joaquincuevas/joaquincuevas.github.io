@@ -4,246 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Profile</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f5f9;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        .header {
-            background-color: #1e3a8a;
-            color: #fff;
-            padding: 30px 0;
-            text-align: center;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        
-        .header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        
-        .header p {
-            margin: 10px 0 0;
-            font-style: italic;
-        }
-        
-        .section {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        .section h2 {
-            color: #1e3a8a;
-            border-bottom: 2px solid #e7eaf0;
-            padding-bottom: 10px;
-            margin-top: 0;
-        }
-        
-        .skills-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        
-        .skills-table th, .skills-table td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #e7eaf0;
-        }
-        
-        .skills-table th {
-            background-color: #1e3a8a;
-            color: #fff;
-            font-weight: bold;
-        }
-        
-        .skills-table tr:nth-child(even) {
-            background-color: #f8f9fa;
-        }
-        
-        .level-expert {
-            color: #1e3a8a;
-            font-weight: bold;
-        }
-        
-        .level-advance {
-            color: #2563eb;
-            font-weight: bold;
-        }
-        
-        .level-basic {
-            color: #6b7280;
-        }
-        
-        .level-native {
-            color: #047857;
-            font-weight: bold;
-        }
-        
-        .link {
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        .link:hover {
-            text-decoration: underline;
-        }
-        
-        .interactive-section {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        .controls {
-            display: flex;
-            gap: 10px;
-        }
-        
-        input[type="text"] {
-            padding: 8px;
-            border: 1px solid #cbd5e0;
-            border-radius: 4px;
-            flex-grow: 1;
-            font-family: inherit;
-        }
-        
-        button {
-            padding: 8px 16px;
-            background-color: #1e3a8a;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-family: inherit;
-            font-weight: bold;
-        }
-        
-        button:hover {
-            background-color: #3b82f6;
-        }
-        
-        #quote-display {
-            font-style: italic;
-            padding: 15px;
-            background-color: #f8f9fa;
-            border-left: 4px solid #1e3a8a;
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
+    <div class="custom-container">
         <div class="header">
             <h1>Joaquin Cuevas Muñoz</h1>
             <p>Civil Engineering in Computer Science student</p>
         </div>
-        
+
         <div class="section">
-            <h2>About Me</h2>
-            <p>
-                <strong>Major:</strong> Computer Science<br>
-                <strong>Year of University Enrollment:</strong> 2022<br>
-                <strong>GitHub:</strong> <a href="https://github.com/Joaquincuevas" class="link" target="_blank">github.com/joaquincuevas</a>
-            </p>
-            <p>
-                I am a passionate civil engineering student with a strong interest in software development and data analysis. 
-                Currently focusing on web technologies and database systems, I enjoy creating applications and web designs that solve real-world problems. 
-                I'm actively seeking internship opportunities where I can apply my skills and continue to grow as a developer.
-            </p>
+            <div class="image-container">
+                <img src="Img\WhatsApp Image 2025-03-21 at 15.54.49.jpeg" alt="Descripción de la imagen" class="responsive-image" style="width: 100%;">
+            </div>
         </div>
-        
-        <div class="section">
-            <h2>Skills</h2>
-            <table class="skills-table">
-                <thead>
-                    <tr>
-                        <th>Skill</th>
-                        <th>Level</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Python</td>
-                        <td class="level-advance">Advanced</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td class="level-basic">Basic</td>
-                    </tr>
-                    <tr>
-                        <td>HTML/CSS</td>
-                        <td class="level-basic">Basic</td>
-                    </tr>
-                    <tr>
-                        <td>Git</td>
-                        <td class="level-basic">Basic</td>
-                    </tr>
-                    <tr>
-                        <td>Excel</td>
-                        <td class="level-advance">Advanced</td>
-                    </tr>
-                    <tr>
-                        <td>SQL</td>
-                        <td class="level-advance">Advanced</td>
-                    </tr>
-                    <tr>
-                        <td>Figma</td>
-                        <td class="level-expert">Expert</td>
-                    </tr>
-                    <tr>
-                        <td>Revit</td>
-                        <td class="level-advance">Advanced</td>
-                    </tr>
-                    <tr>
-                        <td>Autocad</td>
-                        <td class="level-advance">Advanced</td>
-                    </tr>
-                    <tr>
-                        <td>Adobe Illustrator</td>
-                        <td class="level-expert">Expert</td>
-                    </tr>
-                    <tr>
-                        <td>English</td>
-                        <td class="level-expert">Expert</td>
-                    </tr>
-                    <tr>
-                        <td>Spanish</td>
-                        <td class="level-native">Native</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <div class="section">
-            <h2>Favorite Quote</h2>
-            <div class="interactive-section">
-                <p>Change the quote by typing a new one and clicking the button:</p>
-                <div class="controls">
-                    <input type="text" id="quote-input" placeholder="Enter your favorite quote...">
-                    <button id="update-quote">Update Quote</button>
-                </div>
-                <div id="quote-display">
-                    without the dark, we'd never see the stars
+
+        <div class="row g-4 mt-2">
+            <div class="col-12">
+                <div class="section">
+                    <h2 class="responsive-heading">About Me</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p>
+                                <strong>Major:</strong> Computer Science<br>
+                                <strong>Year of University Enrollment:</strong> 2022<br>
+                                <strong>GitHub:</strong> <a href="https://github.com/Joaquincuevas" class="link" target="_blank">github.com/joaquincuevas</a>
+                            </p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                My name is Joaquin Jose Cuevas Muñoz. I am 21 years old and I was born here in Chile. I am currently studying Civil Engineering in Computer Science at Universidad de los Andes.
+                        </div>
+                        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+                            <a class="navbar-brand" href="#">More About my Studies And Hobbies</a>
+                            <ul class="nav nav-pills">
+                              <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading1">Studies</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading2">Hobbies</a>
+                            </ul>
+                          </nav>
+                          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                            <h4 id="scrollspyHeading1">Studies</h4>
+                            <p>I am a passionate civil engineering student with a strong interest in software development and data analysis. Currently focusing on web technologies and database systems, I enjoy creating applications and web designs that solve real-world problems. I'm actively seeking internship opportunities where I can apply my skills and continue to grow as a developer.</p>
+                            <h4 id="scrollspyHeading2">Hobbies</h4>
+                            <p>I'm passionate about maintaining an active and varied lifestyle through several hobbies that keep me engaged both physically and mentally. At the gym, I challenge myself with regular workouts to stay fit and strong. On weekends, I often participate in airsoft matches, enjoying the strategy and adrenaline rush that comes with tactical gameplay. Football is another outlet for my competitive spirit, where I join friends for matches that combine teamwork with physical exertion. When I need to unwind, I immerse myself in video games, appreciating both their storytelling and the connections I make with other players. DJing has become my creative expression, where I mix tracks and create atmospheres that move people on the dance floor, constantly exploring new sounds and techniques to refine my skills.</p>
+                          </div>
+                    </div>
                 </div>
             </div>
         </div>
+        
+        <div class="row g-4 mt-2">
+            <div class="col-12">
+                <div class="section">
+                    <h2 class="responsive-heading">Places I Have Visited</h2>
+                </div>
+            </div>
+        </div>  
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                  <img src="Img\caleb-miller-0Bs3et8FYyg-unsplash-1200x795.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Rome, Italy</h5>
+                    <a href="https://www.google.cl/maps/place/Roma,+Italia/@41.9102088,12.3711883,11z/data=!3m1!4b1!4m6!3m5!1s0x132f6196f9928ebb:0xb90f770693656e38!8m2!3d41.8967068!4d12.4822025!16zL20vMDZjNjI?entry=ttu&g_ep=EgoyMDI1MDMxOC4wIKXMDSoASAFQAw%3D%3D" class="btn btn-primary">Maps</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                  <img src="Img\caleb-madrid.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Madrid, Spain</h5>
+                    <a href="https://www.google.cl/maps/place/Madrid,+España/@40.4380986,-3.8443465,11z/data=!3m1!4b1!4m6!3m5!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167279!4d-3.7032905!16zL20vMDU2X3k?entry=ttu&g_ep=EgoyMDI1MDMxOC4wIKXMDSoASAFQAw%3D%3D" class="btn btn-primary">Maps</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                  <img src="Img\images.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">New York, USA</h5>
+                    <a href="https://www.google.cl/maps/place/Nueva+York,+EE.+UU./@40.6971934,-74.3091553,10z/data=!3m1!4b1!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2?entry=ttu&g_ep=EgoyMDI1MDMxOC4wIKXMDSoASAFQAw%3D%3D" class="btn btn-primary">Maps</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="row g-4 mt-2">
+            <div class="col-12">
+                <div class="section">
+                    <h2 class="responsive-heading">Skills</h2>
+                    <div class="table-responsive">
+                        <table class="skills-table">
+                            <thead>
+                                <tr>
+                                    <th>Skill</th>
+                                    <th>Level</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Python</td>
+                                    <td class="level-advance">Advanced</td>
+                                </tr>
+                                <tr>
+                                    <td>JavaScript</td>
+                                    <td class="level-basic">Basic</td>
+                                </tr>
+                                <tr>
+                                    <td>HTML/CSS</td>
+                                    <td class="level-basic">Basic</td>
+                                </tr>
+                                <tr>
+                                    <td>Git</td>
+                                    <td class="level-basic">Basic</td>
+                                </tr>
+                                <tr>
+                                    <td>Excel</td>
+                                    <td class="level-advance">Advanced</td>
+                                </tr>
+                                <tr>
+                                    <td>SQL</td>
+                                    <td class="level-advance">Advanced</td>
+                                </tr>
+                                <tr>
+                                    <td>Figma</td>
+                                    <td class="level-expert">Expert</td>
+                                </tr>
+                                <tr>
+                                    <td>Revit</td>
+                                    <td class="level-basic">Basic</td>
+                                </tr>
+                                <tr>
+                                    <td>Autocad</td>
+                                    <td class="level-basic">Basic</td>
+                                </tr>
+                                <tr>
+                                    <td>Adobe Illustrator</td>
+                                    <td class="level-expert">Expert</td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td class="level-expert">Expert</td>
+                                </tr>
+                                <tr>
+                                    <td>Spanish</td>
+                                    <td class="level-native">Native</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="row g-4 mt-2">
+            <div class="col-12">
+                <div class="section">     
+                    <h2 class="responsive-heading">Useful Links</h2>   
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/Joaquincuevas">GitHub</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="mailto:jjcuevas@miuandes.cl">Email</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="https://www.notion.so/ING-CIVIL-EN-CIENCIAS-DE-LA-COMPUTACION-202510-Oficial-8757dcfc95ae4c65afa483f43ce5dc6c">Notion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row g-4 mt-2">
+            <div class="col-12">
+                <div class="section">
+                    <h2 class="responsive-heading">Favorite Quote</h2>
+                    <div class="interactive-section">
+                        <p>Change the quote by typing a new one and clicking the button:</p>
+                        <div class="controls">
+                            <div class="row g-2">
+                                <div class="col-md-9 col-sm-8">
+                                    <input type="text" id="quote-input" class="form-control" placeholder="Enter your favorite quote...">
+                                </div>
+                                <div class="col-md-3 col-sm-4">
+                                    <button id="update-quote" class="btn btn-primary w-100">Update Quote</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="quote-display" class="mt-3">
+                            without the dark, we'd never see the stars
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     
     <script>
@@ -254,5 +220,20 @@
             }
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+    <div class="custom-container"></div>
+        <div class="row g-4 mt-2">
+            <div class="col-12">
+                <div class="section">
+                    <h2 class="responsive-heading">Health News Articles</h2>
+                <div>
+            </div>      
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+
 </body>
 </html>
